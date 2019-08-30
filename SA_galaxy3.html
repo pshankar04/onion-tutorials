@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Configure Onion Service</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Dosis|Hammersmith+One|Montserrat|Source+Serif+Pro&display=swap" rel="stylesheet">
+	<style>
+		body {
+			background-color: #f5f5f5;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: repeat;
+			background-size: 1300px 800px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Dosis', sans-serif;
+      font-family: 'Source Serif Pro', serif;
+		}
+
+    .header {
+        /*padding: 0.5em;*/
+        padding-left: 3em;
+        padding-bottom: 0.4em;
+        padding-top: 0.3em;
+        text-align: left;
+        background: #ffffff;
+        color: white;
+        font-size: 15px;
+    }
+
+    .footer {
+        /*padding: 0.5em;*/
+        padding-left: 3em;
+        padding-bottom: 0.4em;
+        padding-top: 3em;
+        text-align: left;
+        background: #ffffff;
+        color: white;
+        font-size: 15px;
+        margin-top: 2em;
+    }
+
+
+		h1 { 
+  			
+        padding-left: 0.2em;
+  			font-size: 2.5em;
+  			margin-bottom: 0.4em;
+  			/*margin-left: 0.1em;*/
+  			margin-right: 0;
+  			font-weight: 520;
+  			color: rgba(0, 0, 0, 0.8);
+        font-family: 'Source Serif Pro', serif;
+
+		}
+
+		h2 { 
+      /*display: block;*/
+      padding-left: 0.2em;
+        font-size: 2.0em;
+        margin-bottom: 0.4em;
+        /*margin-left: 0.1em;*/
+        margin-right: 0;
+        font-weight: 900;
+        color: rgba(0, 0, 0, 1.5);
+        font-family: 'Hammersmith One', sans-serif;
+		}
+
+	 
+
+		h3 { 
+  			padding-left: 1.2em;
+        font-size: 1.3em;
+        margin-bottom: 0.4em;
+        margin-left: 0.5em;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 1.0);
+        font-family: 'Source Serif Pro', serif;
+
+		}
+
+    h4 { 
+        padding-left: 1.2em;
+        font-size: 1em;
+        margin-bottom: 0.4em;
+        margin-left: 0.5em;
+        font-weight: 800;
+        color: #DC143C;
+        font-family: 'Courier', serif;
+
+    }
+
+     h5 { 
+        padding-left: 1.2em;
+        font-size: 1em;
+        margin-bottom: 0.4em;
+        margin-left: 0.5em;
+        font-weight: 800;
+        color: #008000;
+        font-family: 'Courier', serif;
+
+    }
+
+ 
+.lbutton a {
+  color: white;
+  text-decoration:none;  
+}
+.lbutton {
+  			text-align: center;
+			font-size: 1.2em;
+			margin-left: 0.3em;
+			margin-top: 1.5em;
+			margin-bottom: 0.3em;
+			border-radius: 3px;
+			padding-top: 0.3em;
+			padding-bottom: 0.3em;
+			padding-left: 0.8em;
+			padding-right: 0.8em;
+			border-color: white;
+			/*padding: 10px;*/
+			/*background-color: rgba(0, 0, 0, 0.9);*/
+			/*background: black;*/
+			background: transparent;
+			-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+  			cursor: pointer;
+  			color: white;
+  			border: 2px solid #FFFFFF;
+			/*background-color: rgba(0, 0, 0, 0.9);*/
+}
+
+.lbutton:hover {
+  background-color: white;
+
+}
+.lbutton:hover{
+color: black;
+}
+a {
+    color: blue;
+    font-size: 1.2em;
+    font-weight: 800;
+  /*text-decoration:none; */ 
+}
+ 
+
+ 
+
+img{
+	padding-left: 1em;
+	padding-right: 1.5em;
+	padding-top: 0.7em;
+	padding-bottom: 0.4em;
+	float: left;
+}		
+		 
+		 
+	</style>
+	<body>
+        <div class="header">
+            <a href="/test1.html"><img  src="home.png" alt="home" height="60" width="60"></a>
+            <h2>Leveraging Anonymity Network</h2>
+        </div>
+
+        <center><h1 style="margin-top: 0.6em;">Configuring Onion Service</h1><br/></center>
+        <h3> For a successful Onion service, we need to install following tools:
+        <ol>
+                <li>nginx Server</li>
+                <li>Tor Client</li>
+                
+        </ol>
+
+        <h3>1. Please follow the below steps to configure nginx server:</h3>
+
+        <ol style="padding-left: 5em;">
+                <li>Start your terminal ( cmd + space and type 'terminal') </li>
+                <img  src="terminal.png" alt="terminal" width="700" height="400">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <li>Run the below command to install a package manager <b>Homebrew</b> on your computer</li>
+                <h5>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</h5>
+                <p style="padding-left: 0.3em;"> You may find more information about <b>Homebrew</b> &nbsp<a href="https://brew.sh/">here</a></p>
+                <li>Run the following commands in the order:</li>
+                <h5>brew install nginx</h5>
+                <img  src="nginx.png" alt="terminal" width="900" height="200">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <img  src="install_nginx.png" alt="terminal" width="900" height="800">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <h5>brew services start nginx </h5><br/>
+                <img  src="start_nginx.png" alt="terminal" width="900" height="150">
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                <h5>sudo nginx </h5><br/>
+                <li>nginx will serve the html content from the below location:</li>
+                <h4>/usr/local/Cellar/nginx/1.17.1/html/</h4>
+                <p style="padding-left: 0.3em;">By default, nginx server will show the index.html file content unless explicitly specified.</p>
+                <p style="padding-left: 0.3em;">We can access default content, by hitting the below URL on the browser: <h4>'http://localhost:8080/'</h4></p>
+            <p style="padding-left: 0.3em;">If you want to add a new page, add the below lines to the <b>nginx.conf</b> file located in below path:</p>
+                <h4>/usr/local/etc/nginx/nginx.conf</h4>
+                <p style="padding-left: 0.3em;">Lines to add:</p>
+                <p style="padding-left: 1.0em; color:#0000FF; font-weight: bold;">server {</p>    
+                <p style="padding-left: 2.7em; color:#0000FF; font-weight: bold;">listen 8080; <br/></p>
+                <p style="padding-left: 2.7em; color:#0000FF; font-weight: bold;">server_name localhost; <br/></p>
+                <p style="padding-left: 2.7em; color:#0000FF; font-weight: bold;">root /path/to/your/website; <br/></p>
+                <p style="padding-left: 2.7em; color:#0000FF; font-weight: bold;">index test.html test.htm; <br/></p>
+                <p style="padding-left: 1em; color:#0000FF; font-weight: bold;">}<br/></p>
+                <p>We can access this html, by hitting the below URL on the browser:</p>
+                <h4>'http://localhost:8080/test1.html'</h4>
+                <img  src="website.png" alt="website" width="1000" height="600">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+        
+        </ol>
+
+        <br/>
+
+        <h3>2. Having our web server ready to serve the content, now we are supposed to build a onion service (aka Hidden service), <br/>
+               &nbsp &nbsp which could be a website, chat application.,etc.) on the Tor network:
+        </h3>
+
+        <ol style="padding-left: 5em;">
+                <li>Run the following commands to install tor: </li>
+                <h5>brew install tor</h5><br/>
+                <img  src="install_tor.png" alt="tor" width="1050" height="250">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                
+                <li> Navigate to the tor configuration file (torrc.sample) and remove the .sample extension to make it effective.</li>
+                <h4>/usr/local/etc/tor/torrc.sample</h4><br/>
+                <li>Open the tor configuration file 'torrc' and add/uncomment below lines:</li>
+                <p style="padding-left: 3em; color:#0000FF; font-weight: bold;">HiddenServiceDir /usr/local/var/hidden_service/</p>
+                <p style="padding-left: 3em; color:#0000FF; font-weight: bold;">HiddenServicePort 80 127.0.0.1:8080</p>
+                <p style="padding-left: 0.3em;">This means: </p>
+
+                <p style="padding-left: 0.9em;">- Hidden service is created and its web address (in .onion) can be found under the path '/usr/local/var/hidden_service'.</p>
+                <p style="padding-left: 0.9em;">- Tor will listen to http traffic at port 80 (virtual port) and forward the same to address '127.0.0.1' and at port 8080.</p>
+                <p style="padding-left: 0.9em;">- The already configured nginx server is serving the html content (index.html) at this port (8080) and address (127.0.0.1).</p>
+             
+                <li>After updating the configuration file name to 'torrc', navigate back to the Tor installation directory</li>
+                <h4>/usr/local/etc/</h4>
+                <p>run below command to start the tor client:</p>
+                <h5>sudo tor</h5><br/>
+                <img  src="start_tor.png" alt="start_tor" width="1000" height="600">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <li>As a result, it will create a directory 'hidden_service' under the path:</li>
+                <h4>/usr/local/var/</h4><br/>
+                <p style="padding-left: 0.3em;">the 'hidden_service' directory will contain following files:</p>
+                <p style="padding-left: 0.9em;">- authorized_clients</p>
+                <p style="padding-left: 0.9em;">- hostname</p>
+                <p style="padding-left: 0.9em;">- hs_ed25519_public_key</p>
+                <p style="padding-left: 0.9em;">- hs_ed25519_secret_key</p>
+                <p style="padding-left: 0.9em;">to access the address of the created onion service, we have to change the access permission through 'chmod' command</p>
+
+                <p style="padding-left: 0.9em;">run below commands to achieve the same:</p>
+
+                <h5>sudo chmod 777 hidden_service</h5>
+                <h5>cd hidden_service</h5>
+                <h5>sudo chmod 777 hostname</h5>
+                <h5>cat hostname</h5>
+
+                <img  src="hostname.png" alt="hostname" width="1000" height="150">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+                <p style="padding-left: 0.9em;">Copy and Paste the onion hostname on Tor Browser</p>
+
+                <img  src="onion_site.png" alt="onion_site" width="1000" height="600">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        
+        </ol>
+          <div class="footer">
+            
+        </div> 
+    </body>  
+   
+</html>
