@@ -70,10 +70,10 @@
 	 
 
 	h3 { 
-  		padding-left: 1.2em;
+  		/*padding-left: 1.2em;*/
         font-size: 1.2em;
         margin-bottom: 0.4em;
-        margin-left: 0.1em;
+        margin-left: 1.5em;
         font-weight: 300;
         color: rgba(0, 0, 0, 1.0);
         font-family: 'Source Serif Pro', serif;
@@ -206,7 +206,7 @@ img{
                      <h4> Stopwords defined in the quanteda package </h4>
                      <img class="center" style="margin-top: 0.5em;" src="stop_words.png" alt="user_tokens" width="850">
 
-                     <h4> Top Features in the Corpus (extracted from users posts) </h4>
+                     <h4> Top Features in the Corpus (extracted from users posts - showing only top 150 words) </h4>
                      <img class="center" style="margin-top: 0.5em;" src="top_features_1.png" alt="user_tokens" width="850">
                      <img class="center" style="margin-top: 0.5em;" src="top_features_2.png" alt="user_tokens" width="850">
 
@@ -220,29 +220,31 @@ img{
                      <h4> Measuring the frequency of hashtags in corpus </h4>
                      <img class="center" style="margin-top: 0.5em;" src="hashtag_frequency.png" alt="hashtags" width="850">
 
-                     <h4>Text Similarity among the users</h4>
+                     <h4>Text similarity: Compares the 2 users ('Oxie' and '4444') with rest of the users, number close to 1 are most similar.</h4>
                     <img class="center" style="margin-top: 0.5em;" src="similar_users.png" alt="Similarity" width="850">
 
-                    <h4>Other most similar users</h4>
+                    <h4>Other most similar users with values above 0.5</h4>
                     <img class="center" style="margin-top: 0.5em;" src="other_sims2.png" alt="other_similar_users" width="850">
 
-                     <h4> Support for Sentiment Analysis in Quanteda </h4>
+                     <h4> Predefined dictionary: Support for Sentiment Analysis in Quanteda; Recorded list of positive and negative words </h4>
                      <img class="center" style="margin-top: 0.5em;" src="Lib_sa.png" alt="library_sa" width="850">
 
-                     <h4> Measuring the frequency of positive and negative words in Corpus </h4>
+                     <h4> General measure of the frequency of positive and negative words in Corpus </h4>
                      <img class="center" style="margin-top: 0.5em;" src="sa_users.png" alt="sa_for_user_posts" width="850">
 
+                     <h4> General measure of the sentiment of the sample statement:</h4>
                      <h4>For a statement: &nbsp&nbsp <b style="color:green;">Donald Trump is a great President</b></h4>
                     <img class="center" style="margin-top: 0.5em;" src="statement1.png" alt="statement1" width="850">                     
                     
                     <h4>For a statement: &nbsp&nbsp <b style="color:red;">Donald Trump is a bad President</b></h4>
                     <img class="center" style="margin-top: 0.5em;" src="statement21.png" alt="statement2" width="850">
 
+                    <h4> For a text of random article or  discussion, we are supposed to perform the Targeted Sentiment Analysis</h4>
                     <h4>Performing Targeted Sentiment Analysis - Example 1</h4>
-                    <h4> Keywords - ('Security', 'Anonymity', 'Hack', 'People') </h4>
+                    <h4> <b>Keywords</b> - 'Security', 'Anonymity', 'Hack', 'People' </h4>
                     <img class="center" style="margin-top: 0.5em;" src="sa1.png" alt="sentiment1" width="850">
 
-                    <h4>For Other users</h4>
+                    <h4>Listing the users with notable sentiment for the terms - 'Security', 'Anonymity', 'Hack', 'People' </h4>
                     <img class="center" style="margin-top: 0.5em;" src="others_sa.png" alt="others_sa" width="850">
 
                     <h4>Frequency Plot for all users</h4>
@@ -256,7 +258,7 @@ img{
                     <h4> Keywords - ('Privacy', 'Tor', 'Anonymity', 'Linux') </h4>
                     <img class="center" style="margin-top: 0.5em;" src="sa2.png" alt="sentiment2" width="850">
 
-                    <h4>For Other users</h4>
+                    <h4>Listing the users with notable sentiment for the terms - 'Privacy', 'Tor', 'Anonymity', 'Linux' </h4>
                     <img class="center" style="margin-top: 0.5em;" src="others_sa2.png" alt="others_sa2" width="850">
 
                     <h4>Frequency Plot for all users</h4>
